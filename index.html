@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <form method="get">
+      <i class="fa-solid fa-calculator"></i>
+      <input id="peso" class="valor1" placeholder="Peso (kg)" type="text">
+      <input id="altura" class="valor2" placeholder="Altura" type="text">
+      <div>
+        <section>
+          <input type="radio" name="gender" id="fem" value="Feminino">
+          <label for="Feminino">Feminino</label>
+        </section>
+        <section>
+          <input type="radio" name="gender" id="masc" value="Masculino" checked>
+          <label for="Masculino">Masculino</label>
+        </section>
+      </div>
+      <div class="btns">
+        <button class="btn">Calcular</button>
+        <button class="trash"><i class="fa-solid fa-trash"></i></button>
+      </div>
+
+    </form>
+  </main>
+
+  <div class="error">
+    <i class="fa-solid fa-circle-exclamation"></i>
+    <p>Escreva Corretamente</p>
+  </div>
+  <div class="alert">
+    <div class="title"><i class="fa-solid fa-square-poll-horizontal"></i> Resultado</div>
+    <div class="text">
+      <p id="result"></p>
+    </div>
+  </div>
+  <div class="bg"></div>
+
+
+
+  <script src="./index.js"></script>
+  <script src="https://kit.fontawesome.com/a76cf2ada8.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
